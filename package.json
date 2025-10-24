@@ -1,0 +1,20 @@
+{
+  "name": "travel-bucket-list",
+  "version": "1.0.0",
+  "description": "Full-stack Travel Bucket List & Info Hub application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["travel", "bucket-list", "react", "nodejs", "supabase", "aws"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
