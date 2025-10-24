@@ -9,8 +9,10 @@ A full-stack web application for managing your travel bucket list with destinati
 - **Destination Management**: Add, edit, delete, and view destinations
 - **Image Upload**: Upload photos with AWS S3 integration
 - **Search & Filter**: Find destinations by name, country, region, or category
-- **Responsive Design**: Mobile-friendly interface with Tailwind CSS
+- **Responsive Design**: Modern glass morphism UI with Tailwind CSS
 - **External APIs**: Integration with Unsplash for destination images and REST Countries for country data
+- **Demo Mode**: Run without backend configuration using mock data
+- **Image Fallbacks**: Automatic placeholder images for failed loads
 
 ### Backend (Node.js + Express)
 - **RESTful API**: Complete CRUD operations for destinations
@@ -147,6 +149,24 @@ REACT_APP_API_URL=http://localhost:5000/api
 
 ## Running the Application
 
+### Demo Mode (No Backend Required)
+
+For quick testing and demonstration, you can run the frontend in demo mode without configuring backend services:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+The demo includes 15 pre-loaded destinations with working images:
+- **Europe**: Paris, Santorini, London, Rome, Barcelona, Iceland, Amsterdam
+- **Asia**: Tokyo, Dubai, Bali, Maldives
+- **North America**: New York
+- **Oceania**: Sydney
+- **South America**: Machu Picchu
+- **Africa**: Cape Town
+
 ### Development Mode
 
 ```bash
@@ -279,6 +299,15 @@ This project is licensed under the MIT License.
 For support, please open an issue in the GitHub repository or contact the development team.
 
 ## Changelog
+
+### Version 1.1.0
+- Added modern glass morphism UI design with Tailwind CSS
+- Implemented demo mode with 15 pre-loaded destinations
+- Added image fallback handling for failed loads
+- Expanded destination categories (City, Beach, Culture, Adventure, Nature)
+- Added PostCSS and Tailwind configuration
+- Fixed TypeScript compilation errors
+- Enhanced user experience with animations and gradients
 
 ### Version 1.0.0
 - Initial release
