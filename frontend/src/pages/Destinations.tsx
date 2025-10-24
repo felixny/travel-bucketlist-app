@@ -248,6 +248,9 @@ const Destinations: React.FC = () => {
                       src={destination.image_urls[0]}
                       alt={destination.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      onError={(e) => {
+                        e.currentTarget.src = `https://via.placeholder.com/400x300/667eea/ffffff?text=${encodeURIComponent(destination.name)}`;
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <button

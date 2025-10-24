@@ -161,6 +161,9 @@ const DestinationDetail: React.FC = () => {
                         src={url}
                         alt={`${destination.name} ${index + 1}`}
                         className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                        onError={(e) => {
+                          e.currentTarget.src = `https://via.placeholder.com/400x300/667eea/ffffff?text=${encodeURIComponent(destination.name)}`;
+                        }}
                       />
                     </div>
                   ))}
